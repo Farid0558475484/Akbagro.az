@@ -18,7 +18,7 @@ function Servis() {
 
               <div className={s.cardfoot}>
                 <div className={s.tre}>
-                  <a href="#">
+                  <a href="/">
                     <h4>Damci suvarma sistemleri</h4>
                     <p>AKB Agro</p>
                   </a>
@@ -34,7 +34,7 @@ function Servis() {
 
               <div className={s.cardfoot}>
                 <div className={s.tre}>
-                  <a href="#">
+                  <a href="/">
                     <h4>Cileme suvarma sistemleri</h4>
                     <p>AKB Agro</p>
                   </a>
@@ -50,7 +50,7 @@ function Servis() {
 
               <div className={s.cardfoot}>
                 <div className={s.tre}>
-                  <a href="#">
+                  <a href="/">
                     <h4>Ağıllı gübrələmə</h4>
                     <p>AKB Agro</p>
                   </a>

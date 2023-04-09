@@ -1,6 +1,6 @@
 const cards = [
   {
-    imageSrc: "/p1.webp",
+    imageSrc: "./../fgimg/p1.webp",
     title: "Kurtağzı çıxış nipeli",
   },
   {

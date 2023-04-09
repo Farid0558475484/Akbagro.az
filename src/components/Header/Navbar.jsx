@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Navbar.module.scss";
 import { NavLink } from "react-bootstrap";
-import { Button } from "react-bootstrap";
 
 export default function Navbar() {
   return (

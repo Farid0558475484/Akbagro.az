@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import s from "./Menu.module.scss";
-import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";

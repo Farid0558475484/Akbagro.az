@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "react-bootstrap";
 import styles from ".//Footer.module.scss";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
