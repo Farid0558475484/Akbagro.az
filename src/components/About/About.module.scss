@@ -42,3 +42,14 @@
   display: flex;
   justify-content: center;
 }
+.imgFluid {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  .imgFluid {
+    height: 200px;
+  }
+}

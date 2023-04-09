@@ -6,14 +6,8 @@ function About() {
   return (
     <>
       <Container fluid>
-        <Row className="mt-5">
-          <img
-            src="/img12.jpeg"
-            alt="Logo"
-            className="img-fluid"
-            layout="responsive"
-            objectFit="cover"
-          />
+        <Row className="mt-3">
+          <img src="/img12.jpeg" alt="Logo" className={s.imgFluid} />
         </Row>
       </Container>
       <Container className={s.aboutMain}>
@@ -138,7 +132,7 @@ function About() {
 
           <Col md="6">
             <div className={s.logoPhoto}>
-              <img src="/logo.png" alt="Logo" width={200} height={200}/>
+              <img src="/logo.png" alt="Logo" width={200} height={200} />
             </div>
           </Col>
         </Row>
