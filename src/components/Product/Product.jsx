@@ -46,7 +46,10 @@ function Products() {
 
   return (
     <Container>
-      <Row className="mt-5 mb-5">
+      <Row>
+        <h1 className={s.titleProduct}>Məhsullar</h1>
+      </Row>
+      <Row className="mt-3 mb-3">
         {cardsToDisplay.map((card, index) => (
           <Col xl="3" xs="6" key={index} className={s.cardCol}>
             <Card className={s.card}>
