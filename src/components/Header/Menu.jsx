@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import s from "./Menu.module.scss";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Menu() {
   const [show, setShow] = useState(false);
@@ -14,7 +14,7 @@ function Menu() {
     <>
       <div className={s.bodyMenu}>
         <div className={s.MobileMenu}>
-          <NavLink href="/">
+          <Link to="/">
             <img
               src="/logo.png"
               alt="Logo"
@@ -22,7 +22,7 @@ function Menu() {
               height={50}
               className={s.border}
             />
-          </NavLink>
+          </Link>
           <a href="tel:+99477384242">
             <Button variant="success">Zeng et</Button>
           </a>
@@ -36,7 +36,7 @@ function Menu() {
             <Offcanvas.Title className={s.title}>
               {" "}
               <li onClick={handleClose}>
-                <NavLink href="/"> AkbAgro.az</NavLink>
+                <Link to="/"> AkbAgro.az</Link>
               </li>
             </Offcanvas.Title>
           </Offcanvas.Header>
@@ -44,19 +44,19 @@ function Menu() {
             <div>
               <ul className={s.navbar__links}>
                 <li onClick={handleClose}>
-                  <NavLink href="/">Şirkət</NavLink>
+                  <Link to="/">Şirkət</Link>
                 </li>
                 <li onClick={handleClose}>
-                  <NavLink href="/about-us">Haqqımızda</NavLink>
+                  <Link to="/about-us">Haqqımızda</Link>
                 </li>
                 <li onClick={handleClose}>
-                  <NavLink href="/products">Məhsullar</NavLink>
+                  <Link to="/products">Məhsullar</Link>
                 </li>
                 <li onClick={handleClose}>
-                  <NavLink href="/services">Xidmətlər</NavLink>
+                  <Link to="/services">Xidmətlər</Link>
                 </li>
                 <li onClick={handleClose}>
-                  <NavLink href="/contact">Əlaqə</NavLink>
+                  <Link to="/contact">Əlaqə</Link>
                 </li>
               </ul>
             </div>
