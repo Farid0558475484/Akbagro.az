@@ -1,5 +1,10 @@
 .footer {
   display: flex;
+  background-color: #38a849;
+  padding: 0;
+  margin: 0;
+  padding-left: calc(var(--bs-gutter-x) * 0) !important;
+  padding-left: calc(var(--bs-gutter-x) * 0) !important;
 }
 
 .email,
@@ -13,5 +18,32 @@
     font-size: 1.5rem;
     font-weight: 600;
     color: #38a849;
+    color: white;
   }
+}
+.map {
+  padding: 0;
+  margin: 0;
+  padding: 0 !important;
+}
+
+.mapSize {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .mapSize {
+    width: 100%;
+    height: 300px;
+  }
+}
+.btn {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  background-color: #198754;
+  border-radius: 15px;
+  padding: 8px;
+  border: 0px solid black;
 }
