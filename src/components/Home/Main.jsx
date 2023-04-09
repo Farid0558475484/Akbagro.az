@@ -39,22 +39,17 @@ function Main() {
             />
           </Col>
         </Row>
-        <Row className={s.mainTop}>
-          <Col md="6">
-            <p className={s.mainSectionTitle}>
-              İnformasiyanı <br />
-              gəlirə
-              <br /> çeviririk
-            </p>
-          </Col>
-          <Col md="6">
-            <img
-              src="/img13.png"
-              alt="Logo"
-              className="img-fluid"
-              layout="responsive"
-              objectFit="cover"
-            />
+        <Row>
+          <Col>
+            <div>
+              <img
+                src="/1dd.jpg"
+                alt="Logo"
+                layout="responsive"
+                objectFit="cover"
+                className={s.imgMain}
+              />
+            </div>
           </Col>
         </Row>
         <Servis />
