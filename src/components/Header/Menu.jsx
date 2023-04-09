@@ -25,7 +25,9 @@ function Menu() {
             />
           </Link>
           <a href="tel:+994508591717">
-            <Button variant="success">Zeng edin !</Button>
+          <button variant="success" className={s.btn}>
+                Zəng edin !
+              </button>
           </a>
           <FaBars onClick={handleShow} className={s.icon} />
         </div>
