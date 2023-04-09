@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import s from "./Product.module.scss";
-import cards from "./../../data/cards.js";
+import { cards } from "./../../data/cards.js";
 
 function Products() {
   return (
