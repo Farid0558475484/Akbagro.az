@@ -13,13 +13,7 @@ function Servis() {
           <Col md="4">
             <div className={s.cardBody}>
               <div className={s.cardImg}>
-                <img
-                  src="/1.webp"
-                  alt="Logo"
-                  className="img-fluid"
-                  layout="responsive"
-                  objectFit="cover"
-                />
+                <img src="/1ff.jpg" alt="Logo" className={s.img} />
               </div>
 
               <div className={s.cardfoot}>
@@ -35,13 +29,7 @@ function Servis() {
           <Col md="4">
             <div className={s.cardBody}>
               <div className={s.cardImg}>
-                <img
-                  src="/3.webp"
-                  alt="Logo"
-                  className="img-fluid"
-                  layout="responsive"
-                  objectFit="cover"
-                />
+                <img src="/3.webp" alt="Logo" className={s.img}  />
               </div>
 
               <div className={s.cardfoot}>
@@ -57,13 +45,7 @@ function Servis() {
           <Col md="4">
             <div className={s.cardBody}>
               <div className={s.cardImg}>
-                <img
-                  src="/2.webp"
-                  alt="Logo"
-                  className="img-fluid"
-                  layout="responsive"
-                  objectFit="cover"
-                />
+                <img src="/2.webp" alt="Logo"className={s.img}  />
               </div>
 
               <div className={s.cardfoot}>
