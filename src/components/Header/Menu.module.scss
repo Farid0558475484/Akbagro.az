@@ -1,0 +1,45 @@
+.MobileMenu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: #38a849;
+}
+
+.border {
+  border-radius: 50%;
+}
+@media screen and (min-width: 768px) {
+  .MobileMenu {
+    display: none;
+  }
+}
+
+.navbar__links li {
+  list-style-type: none;
+  text-align: center;
+  padding: 1rem;
+  font-size: 35px;
+  font-weight: 800;
+}
+.title {
+  a,
+  li {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 800;
+  }
+}
+
+.navbar__links a {
+  text-decoration: none;
+  list-style-type: none;
+
+  color: #38a849;
+}
+.bodyMenu {
+  background-color: #1f4e3d;
+  margin-bottom: 20px;
+}

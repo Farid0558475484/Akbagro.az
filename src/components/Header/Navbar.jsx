@@ -39,7 +39,7 @@ export default function Navbar() {
       <div className={styles.phone}>
         <a href="tel:+99477384242">
           <Button variant="success">Zeng et</Button>{" "}
-          <button variant="success">Zeng et</button>
+          {/* <button variant="success">Zeng et</button> */}
         </a>
       </div>
     </nav>

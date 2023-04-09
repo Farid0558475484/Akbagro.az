@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+}
+
+.email,
+.phone1,
+.phone2,
+.location {
+  display: flex;
+  padding: 30px;
+  gap: 10px;
+  span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #38a849;
+  }
+}
