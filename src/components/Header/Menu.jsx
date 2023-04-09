@@ -3,6 +3,7 @@ import s from "./Menu.module.scss";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Link } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
 
 function Menu() {
   const [show, setShow] = useState(false);
@@ -24,11 +25,9 @@ function Menu() {
             />
           </Link>
           <a href="tel:+994508591717">
-            <Button variant="success">Zeng et</Button>
+            <Button variant="success">Zeng edin !</Button>
           </a>
-          <Button variant="primary" onClick={handleShow}>
-            Menu
-          </Button>
+          <FaBars onClick={handleShow} className={s.icon} />
         </div>
 
         <Offcanvas show={show} onHide={handleClose} className={s.bodyMenu}>
