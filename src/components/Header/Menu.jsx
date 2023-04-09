@@ -23,7 +23,7 @@ function Menu() {
               className={s.border}
             />
           </Link>
-          <a href="tel:+99477384242">
+          <a href="tel:+994508591717">
             <Button variant="success">Zeng et</Button>
           </a>
           <Button variant="primary" onClick={handleShow}>
