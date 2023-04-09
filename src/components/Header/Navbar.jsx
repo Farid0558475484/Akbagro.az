@@ -1,6 +1,6 @@
+import React from "react";
 import styles from "./Navbar.module.scss";
 import { NavLink } from "react-bootstrap";
-import React from "react";
 import { Button } from "react-bootstrap";
 
 export default function Navbar() {
@@ -39,7 +39,6 @@ export default function Navbar() {
       <div className={styles.phone}>
         <a href="tel:+99477384242">
           <Button variant="success">Zeng et</Button>{" "}
-          {/* <button variant="success">Zeng et</button> */}
         </a>
       </div>
     </nav>

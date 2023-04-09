@@ -8,6 +8,7 @@ import Home from "./components/Home/Home";
 import { Routes, Route } from "react-router-dom";
 import Servis from "./components/Servis/Servis";
 import About from "./components/About/About";
+import Product from "./components/Product/Product";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/about-us" element={<About />} />
-          {/* <Route path="/products" element={<ContactUs />} /> */}
+          <Route path="/products" element={<Product />} />
           <Route path="/services" element={<Servis />} />
           {/* <Route path="/contact" element={<ProductDetails />} /> */}
         </Routes>
