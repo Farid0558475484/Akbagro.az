@@ -13,7 +13,7 @@ function Servis() {
           <Col md="4">
             <div className={s.cardBody}>
               <div className={s.cardImg}>
-                <img src="/1ff.jpg" alt="Logo" className={s.img} />
+                <img src="/b1.jpg" alt="Logo" className={s.img} />
               </div>
 
               <div className={s.cardfoot}>
