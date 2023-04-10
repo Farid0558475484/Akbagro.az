@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "./Navbar.module.scss";
-import { NavLink } from "react-bootstrap";
+// import { NavLink } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbar__logo}>
-        <NavLink href="/">
+        <Link href="/">
           <img
             src="/logo.png"
             alt="Logo"
@@ -14,24 +15,24 @@ export default function Navbar() {
             height={50}
             className={styles.border}
           />
-        </NavLink>
+        </Link>
       </div>
       <div>
         <ul className={styles.navbar__links}>
           <li>
-            <NavLink href="/">Şirkət </NavLink>
+            <Link to="/">Şirkət</Link>
           </li>
           <li>
-            <NavLink href="/about-us">Haqqımızda</NavLink>
+            <Link to="/about-us">Haqqımızda</Link>
           </li>
           <li>
-            <NavLink href="/products">Məhsullar</NavLink>
+            <Link to="/products">Məhsullar</Link>
           </li>
           <li>
-            <NavLink href="/services">Xidmətlər</NavLink>
+            <Link to="/services">Xidmətlər</Link>
           </li>
           <li>
-            <NavLink href="/contact">Əlaqə</NavLink>
+            <Link to="/contact">Əlaqə</Link>
           </li>
         </ul>
       </div>

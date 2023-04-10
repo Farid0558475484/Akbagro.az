@@ -8,12 +8,12 @@ function Slider() {
     <Carousel>
       <Carousel.Item>
         <img
-          src="/img4.jpeg"
+          src="/a1.jpg"
           alt="Logo"
           className={s.img}
         
         />
-        <Carousel.Caption>
+        <Carousel.Caption className={s.captionItem}>
           <h3 className={s.title} >AKB Agro</h3>
           <p className={s.desc}>Damci suvarma sistemleri</p>
         </Carousel.Caption>
@@ -26,7 +26,7 @@ function Slider() {
         
         />
 
-        <Carousel.Caption>
+        <Carousel.Caption  className={s.captionItem}>
           <h3 className={s.title}>AKB Agro</h3>
           <p className={s.desc}>Cileme suvarma sistemleri</p>
         </Carousel.Caption>
@@ -38,7 +38,7 @@ function Slider() {
           
           className={s.img}
         />
-        <Carousel.Caption>
+        <Carousel.Caption  className={s.captionItem}>
           <h3 className={s.title}>AKB Agro</h3>
           <p className={s.desc}>Ağıllı gübrələmə</p>
         </Carousel.Caption>
