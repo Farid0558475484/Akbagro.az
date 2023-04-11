@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
@@ -21,28 +21,29 @@ function Products() {
     activePage * cardsPerPage
   );
 
-  const pageNumbers = [];
-  for (let i = 1; i <= Math.min(5, totalPages); i++) {
-    pageNumbers.push(i);
-  }
+  const [pageNumbers, setPageNumbers] = useState([]);
+  useEffect(() => {
+    const newPageNumbers = [];
+    const maxDisplayedPages = 5;
+    const maxPageDifference = 2;
+    const firstPage = Math.max(1, activePage - maxPageDifference);
+    const lastPage = Math.min(totalPages, activePage + maxPageDifference);
 
-  const firstPage = Math.max(1, activePage - 2);
-  const lastPage = Math.min(totalPages, activePage + 2);
-
-  for (let i = firstPage; i <= lastPage; i++) {
-    if (!pageNumbers.includes(i)) {
-      if (i === 1) {
-        pageNumbers.unshift(i);
-      } else if (i === totalPages) {
-        pageNumbers.push(i);
-      } else if (pageNumbers.length < 5) {
-        pageNumbers.push(i);
-      } else {
-        pageNumbers.splice(2, 1, "...");
-        break;
-      }
+    for (let i = firstPage; i <= lastPage; i++) {
+      newPageNumbers.push(i);
     }
-  }
+
+    if (newPageNumbers.length > maxDisplayedPages) {
+      if (newPageNumbers[0] === 1) {
+        newPageNumbers.splice(maxDisplayedPages - 1, 1, "...");
+      } else {
+        newPageNumbers.splice(1, 1, "...");
+      }
+      newPageNumbers.splice(maxDisplayedPages - 1, 1);
+    }
+
+    setPageNumbers(newPageNumbers);
+  }, [activePage, totalPages]);
 
   return (
     <Container>
@@ -75,9 +76,9 @@ function Products() {
             disabled={activePage === 1}
             onClick={() => handleClick(activePage - 1)}
           />
-          {pageNumbers.map((pageNumber) => (
+          {pageNumbers.map((pageNumber, index) => (
             <Pagination.Item
-              key={pageNumber}
+              key={index}
               active={pageNumber === activePage}
               onClick={() => handleClick(pageNumber)}
             >
