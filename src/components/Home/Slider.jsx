@@ -40,7 +40,7 @@ function Slider() {
         />
         <Carousel.Caption  className={s.captionItem}>
           <h3 className={s.title}>AKB Agro</h3>
-          <p className={s.desc}> gübrələmə</p>
+          <p className={s.desc}> Gübrələmə</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
