@@ -48,7 +48,7 @@ const Footer = () => (
 
       <Col md="6" className={styles.map}>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22860.76515080142!2d49.72151872821744!3d40.3303700899744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307f811a40fc4b%3A0xf75cb330fdbf2716!2zWG9jYWjJmXPJmW4!5e0!3m2!1sru!2saz!4v1680789467407!5m2!1sru!2saz"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.974351946899!2d49.75467447607671!3d40.32072676147686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307f3c05cce811%3A0xd5b43d6de90a2df2!2sAKB%20Agro%20Suvarma%20Sisteml%C9%99ri!5e0!3m2!1sru!2saz!4v1681843679277!5m2!1sru!2saz"
           title="Google Maps Location of Akbagro"
           className={styles.mapSize}
         ></iframe>
