@@ -1,6 +1,6 @@
 export const cards = [
   {
-    imageSrc: "./imgProduct/1.webp",
+    imageSrc: "./imgProduct/rrr.jpg",
     title: "Yuvarlaq damlama borusu",
   },
   {
